@@ -151,9 +151,9 @@ body {
     position: relative;
 }
 
-.header .logo {
-    width: 150px;
-}
+/*.header .logo {*/
+    /*width: 150px;*/
+/*}*/
 
 .header .logo img {
     width: 100%;
@@ -487,11 +487,11 @@ a {
 
 @media (max-width: 992px) {
     .slider .button {
-        bottom: 0;
+        bottom: -30px;
     }
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     .slider .btn {
         padding: 2px 10px 3px 6px;
         font-size: 8px;
@@ -500,9 +500,9 @@ a {
     .slider .button {
         bottom: -18%;
     }
-}
+} */
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
     .slider .btn {
         padding: 2px 10px 2px 6px;
     }
@@ -684,13 +684,13 @@ a {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .vklinik {
         text-align: center;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     .img {
         margin-left: 0;
         text-align: center !important;
@@ -896,7 +896,7 @@ a {
     font-weight: lighter;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
     .follow {
         font-size: 27px;
     }
@@ -941,7 +941,7 @@ a {
     font-weight: bold;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .footer {
         padding-top: 50px;
         text-align: center;
