@@ -15,6 +15,7 @@
     <link href="css/jquery.fancybox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -61,8 +62,21 @@
                         </ul>
                     </nav>
                     <div class="button">
-                        <a href="#" class="btn">записаться на прием</a>
+                        <a href="#popup" class="btn popup-link">записаться на прием</a>
                     </div>
+                    <!--/////pop-up-->
+                    <div id="popup" class="mfp-hide popup">
+                        <div class="container-form">
+                            <form action="">
+                                <input placeholder="Имя" type="text">
+                                <input placeholder="Телефон" type="number">
+                                <div class="button">
+                                    <a href="#" class="btn">Заказать звонок</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--/////pop-up end-->
                     <span class="toggle-menu">
                         <span></span>
                     </span>
@@ -86,7 +100,7 @@
                                     <h4>ЦЕНТР КОСМЕТОЛОГИИ В ТЕРНОПОЛЕ</h4>
                                     <p>ОСТАВЬТЕ ЗАЯВКУ НА САЙТЕ И ПОЛУЧИТЕ  <span>СКИДКУ 20%</span> НА ПРОЦЕДУРУ</p>
                                     <div class="button">
-                                        <a href="#" class="btn">отправить</a>
+                                        <a href="#popup" class="btn popup-link">отправить</a>
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +112,7 @@
                                     <h4>ЦЕНТР КОСМЕТОЛОГИИ В ТЕРНОПОЛЕ</h4>
                                     <p>ОСТАВЬТЕ ЗАЯВКУ НА САЙТЕ И ПОЛУЧИТЕ  <span>СКИДКУ 20%</span> НА ПРОЦЕДУРУ</p>
                                     <div class="button">
-                                        <a href="#" class="btn">отправить</a>
+                                        <a href="#popup" class="btn popup-link">отправить</a>
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +124,7 @@
                                     <h4>ЦЕНТР КОСМЕТОЛОГИИ В ТЕРНОПОЛЕ</h4>
                                     <p>ОСТАВЬТЕ ЗАЯВКУ НА САЙТЕ И ПОЛУЧИТЕ  <span>СКИДКУ 20%</span> НА ПРОЦЕДУРУ</p>
                                     <div class="button">
-                                        <a href="#" class="btn">отправить</a>
+                                        <a href="#popup" class="btn popup-link">отправить</a>
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +151,7 @@
                                         <h4 class="cosm-title">ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ</h4>
                                         <p class="cosm-text">Увлажнение изнутри и продление молодости</p>
                                         <span class="cosm-price text-uppercase">от 5500 РУБ.</span>
-                                        <a href="#" class="btn">записаться</a>
+                                        <a href="#popup" class="btn popup-link">записаться</a>
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +166,7 @@
                                         <h4 class="cosm-title">ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</h4>
                                         <p class="cosm-text">Удаление нежелательных волос БЕЗ БОЛИ и НАВСЕГДА!</p>
                                         <span class="cosm-price text-uppercase">от 400 РУБ.</span>
-                                        <a href="#" class="btn">записаться</a>
+                                        <a href="#popup" class="btn popup-link">записаться</a>
                                     </div>
                                 </div>
                             </div>
@@ -171,7 +185,7 @@
                                         <p class="cosm-text">Устранение глубоких морщин,
                                             коррекции объема и формы губ, формирования контура лица</p>
                                         <span class="cosm-price text-uppercase">от 4990 РУБ.</span>
-                                        <a href="#" class="btn">записаться</a>
+                                        <a href="#popup" class="btn popup-link">записаться</a>
                                     </div>
                                 </div>
                             </div>
@@ -186,7 +200,7 @@
                                         <h4 class="cosm-title">ПЕРМАНЕНТНЫЙ МАКИЯЖ</h4>
                                         <p class="cosm-text">БЕЗУПРЕЧНЫЕ ГЛАЗА БРОВИ И ГУБЫ</p>
                                         <span class="cosm-price text-uppercase">от 6500 РУБ.</span>
-                                        <a href="#" class="btn">записаться</a>
+                                        <a href="#popup" class="btn popup-link">записаться</a>
                                     </div>
                                 </div>
                             </div>
@@ -395,7 +409,7 @@
                     </div>
 
                     <div class="button m">
-                        <a href="#" class="btn">записаться на процедуру</a>
+                        <a href="#popup" class="btn popup-link">записаться на процедуру</a>
                     </div>
 
                 </div>
@@ -482,15 +496,15 @@
     </div>
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"-->
+        <!--integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"-->
+        <!--crossorigin="anonymous"></script>-->
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <!-- fancyBox JS -->
     <script src="js/jquery.fancybox.min.js"></script>
     <!-- owl carousel JS -->

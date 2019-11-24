@@ -37,3 +37,7 @@ $(function () {
         $('.main-nav').toggleClass('open');
     });
 });
+
+$(document).ready(function() {
+    $('.popup-link').magnificPopup();
+});

@@ -784,7 +784,7 @@ top: 35% !important;
     height: auto;
 }
 
-.image {
+.doctors .image {
     max-width: 500px;
     max-height: 500px;
 }
@@ -907,7 +907,7 @@ top: 35% !important;
 
     .footer {
         display: flex;
-        padding-top: 0px;
+        padding-top: 0;
         padding-bottom: 21px;
         background-color: black;
     }
@@ -920,3 +920,69 @@ top: 35% !important;
     }
 }
 /* ////////////////////////FOOTER END//////////////////////// */
+/*//////////////////////POP-UP BEGIN//////////////////////*/
+
+.popup {
+    background-color: #fff;
+    max-width: 500px;
+    padding: 60px 90px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.popup input {
+    max-width: 374px;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+.popup input[type="text"] {
+    margin-bottom: 30px;
+}
+
+.popup input[type="number"] {
+    margin-bottom: 36px;
+}
+.popup input:focus {
+    outline: none;
+}
+
+.popup .btn {
+    padding: 6px 10px;
+    border: 1px solid #340F0F !important;
+    border-radius: 6px;
+}
+.popup .btn:hover {
+    border: 1px solid #F0F0F0 !important;
+    background-color: #F0F0F0;;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+@media (max-width: 575px) {
+    .popup {
+        padding: 60px 60px;
+    }
+}
+
+@media (max-width: 440px) {
+    .popup {
+        padding: 36px 18px;
+    }
+}
+
+/*//////////////////////POP-UP END//////////////////////*/
