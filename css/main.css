@@ -512,6 +512,10 @@ body {
     margin-right: auto;
 }
 
+ .doctors .btn {
+    width: 240px;
+}
+
 .cosm-title {
     font-weight: bold;
     font-size: 16px;
