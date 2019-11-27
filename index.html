@@ -24,7 +24,7 @@
     <title>Clinik</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".header" data-offset="50">
     <div class="wrapper">
 
         <!--_________________________HEADER_________________________-->
@@ -37,7 +37,7 @@
                     </div>
                     <div class="phones">
                         <div class="phon">
-                            <a href="tel:8(495)215-03-39" class="mobile">8(495)215-03-39</a>
+                            <a href="tel:+38 067 962 39 82" class="mobile">+38 067 962 39 82</a>
                         </div>
                     </div>
                 </div>
@@ -54,10 +54,10 @@
                     </div>
                     <nav class="main-nav">
                         <ul class=" menu topmenu list-reset">
-                            <li><a class="header-link" href="#">О НАС</a></li>
-                            <li><a class="header-link" href="#">УСЛУГИ </a></li>
-                            <li><a class="header-link" href="#">ОТЗЫВЫ</a></li>
-                            <li><a class="header-link" href="#">НАШИ ВРАЧИ</a></li>
+                            <li><a class="header-link nav-link-new" href="#about">О НАС</a></li>
+                            <li><a class="header-link nav-link-new" href="#services">УСЛУГИ </a></li>
+                            <li><a class="header-link nav-link-new" href="#reviews">ОТЗЫВЫ</a></li>
+                            <li><a class="header-link nav-link-new" href="#cont-link">НАШИ ВРАЧИ</a></li>
                             <!--<li><a class="header-link" href="#call"> <span>ЗАПИСАТЬСЯ НА ПРИЙОМ</span></a></li>-->
                         </ul>
                     </nav>
@@ -67,12 +67,13 @@
                     <!--/////pop-up-->
                     <div id="popup" class="mfp-hide popup">
                         <div class="container-form">
-                            <form action="">
+                            <form action="" class="order-main">
+                                <h3 class="text-center"><span id="customTextForm">Заполните форму</span></h3>
                                 <input placeholder="Имя" type="text">
-                                <input placeholder="Телефон" type="number">
-                                <div class="button">
-                                    <a href="#" class="btn">Заказать звонок</a>
-                                </div>
+                                <input placeholder="Телефон" type="tel" class="phoneidcl">
+                                <button class="button disbutt" disabled>
+                                    <span class="btn">Заказать звонок</span>
+                                </button>
                             </form>
                         </div>
                     </div>
@@ -92,9 +93,9 @@
 
             <section class="slider" id="action">
                 <div class="container-cust">
-                    <div class="owl-carousel slider-carousel owl-theme">
-                        <div class="item">
-                            <div class="image">
+                    <!--<div class=" slider-carousel">-->
+                        <!--<div class="item">-->
+                            <!--<div class="image">-->
                                 <!--<img src="images/slider-1.jpg" alt="">-->
                                 <div class="slider-text">
                                     <h4>ЦЕНТР КОСМЕТОЛОГИИ В ТЕРНОПОЛЕ</h4>
@@ -102,33 +103,10 @@
                                     <div class="button">
                                         <a href="#popup" class="btn popup-link">отправить</a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <!--<img src="images/slider-1.jpg" alt="">-->
-                                <div class="slider-text">
-                                    <h4>ЦЕНТР КОСМЕТОЛОГИИ В ТЕРНОПОЛЕ</h4>
-                                    <p>ОСТАВЬТЕ ЗАЯВКУ НА САЙТЕ И ПОЛУЧИТЕ  <span>СКИДКУ 20%</span> НА ПРОЦЕДУРУ</p>
-                                    <div class="button">
-                                        <a href="#popup" class="btn popup-link">отправить</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <!--<img src="images/slider-1.jpg" alt="">-->
-                                <div class="slider-text">
-                                    <h4>ЦЕНТР КОСМЕТОЛОГИИ В ТЕРНОПОЛЕ</h4>
-                                    <p>ОСТАВЬТЕ ЗАЯВКУ НА САЙТЕ И ПОЛУЧИТЕ  <span>СКИДКУ 20%</span> НА ПРОЦЕДУРУ</p>
-                                    <div class="button">
-                                        <a href="#popup" class="btn popup-link">отправить</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
                     </div>
                 </div>
             </section>
@@ -139,40 +117,40 @@
                     <h2 class="title text-uppercase text-center">НАШИ УСЛУГИ</h2>
                     <a href="#" class="title-link text-uppercase text-center"> ВСЕ УСЛУГИ <span>(23)</span></a>
                     <div class="service-inner">
-                        <div class="row service-f">
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="image">
-                                            <img class="img" src="images/servise-1.png" alt="">
+                        <div class="row service-f services-row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="image">
+                                                <img class="img" src="images/servise-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-dis">
+                                            <h4 class="cosm-title">ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ</h4>
+                                            <p class="cosm-text">Увлажнение изнутри и продление молодости</p>
+                                            <span class="cosm-price text-uppercase">от 2000 ГРН.</span>
+                                            <a href="#popup" class="btn popup-link">записаться</a>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <h4 class="cosm-title">ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ</h4>
-                                        <p class="cosm-text">Увлажнение изнутри и продление молодости</p>
-                                        <span class="cosm-price text-uppercase">от 5500 РУБ.</span>
-                                        <a href="#popup" class="btn popup-link">записаться</a>
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-2 ">
-                                        <div class="image ">
-                                            <img src="images/service-2.png" alt="">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-2 ">
+                                            <div class="image ">
+                                                <img src="images/service-2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 offset-md-2 off col-dis">
+                                            <h4 class="cosm-title">ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</h4>
+                                            <p class="cosm-text">Удаление нежелательных волос БЕЗ БОЛИ и НАВСЕГДА!</p>
+                                            <span class="cosm-price text-uppercase">от 150 ГРН.</span>
+                                            <a href="#popup" class="btn popup-link">записаться</a>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 offset-md-2 off">
-                                        <h4 class="cosm-title">ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</h4>
-                                        <p class="cosm-text">Удаление нежелательных волос БЕЗ БОЛИ и НАВСЕГДА!</p>
-                                        <span class="cosm-price text-uppercase">от 400 РУБ.</span>
-                                        <a href="#popup" class="btn popup-link">записаться</a>
-                                    </div>
                                 </div>
-                            </div>
                         </div>
 
-                        <div class="row">
+                        <div class="row services-row">
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -180,11 +158,11 @@
                                             <img class="img" src="images/service-3.png" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-dis">
                                         <h4 class="cosm-title">КОНТУРНАЯ ПЛАСТИКА</h4>
                                         <p class="cosm-text">Устранение глубоких морщин,
                                             коррекции объема и формы губ, формирования контура лица</p>
-                                        <span class="cosm-price text-uppercase">от 4990 РУБ.</span>
+                                        <span class="cosm-price text-uppercase">от 1900 ГРН.</span>
                                         <a href="#popup" class="btn popup-link">записаться</a>
                                     </div>
                                 </div>
@@ -196,10 +174,10 @@
                                             <img src="images/service-4.png" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-md-6 offset-md-2 off">
+                                    <div class="col-md-6 offset-md-2 off col-dis">
                                         <h4 class="cosm-title">ПЕРМАНЕНТНЫЙ МАКИЯЖ</h4>
                                         <p class="cosm-text">БЕЗУПРЕЧНЫЕ ГЛАЗА БРОВИ И ГУБЫ</p>
-                                        <span class="cosm-price text-uppercase">от 6500 РУБ.</span>
+                                        <span class="cosm-price text-uppercase">от 2500 ГРН.</span>
                                         <a href="#popup" class="btn popup-link">записаться</a>
                                     </div>
                                 </div>
@@ -208,8 +186,8 @@
                     </div>
 
 
-                    <h2 class="title text-uppercase text-center" id="about" >V KLINIK</h2>
-                    <h4 class="text-center subtitle">МОСКОВСКИЙ ЦЕНТР КОСМЕТОЛОГИИ</h4>
+                    <h2 class="title text-uppercase text-center" id="about" >OK KLINIK</h2>
+                    <h4 class="text-center subtitle">ТЕРНОПОЛЬСКИЙ ЦЕНТР КОСМЕТОЛОГИИ</h4>
                     <div class="vklinik">
                         <div class="container">
                             <p class="vk-text text-center">Мы практикуем индивидуальный подход к каждому пациенту, так
@@ -259,7 +237,7 @@
                     <h4 class="text-center subtitle">КЛИНИКА КОСМЕТОЛОГИИ</h4>
                     <p class="vk-text text-center">
                         Косметологические услуги полезны в любом возрасте для поддержания и улучшения внешних данных.
-                        Профессиональная косметология, клиника V-KLINIK предлагает вам высококвалифицированную помощь в
+                        Профессиональная косметология, клиника OK-KLINIK предлагает вам высококвалифицированную помощь в
                         сохранении вашей молодости и устранении нежеланных возрастных проявлений.
                     </p>
                     <div class="owl-carousel block-carousel owl-theme">
@@ -295,29 +273,81 @@
                     <h2 class="title text-uppercase text-center">ОТЗЫВЫ</h2>
                     <a href="#" class="title-link text-uppercase text-center"> ВСЕ ОТЗЫВЫ </a>
 
-                    <div class="owl-carousel block-carousel owl-theme">
-                        <div class="item">
+                    <div class="row">
+                        <div class="col-md-4">
                             <div class="image">
-                                <a data-fancybox="gallery" href="images/onz-1.jpg"><img src="images/onz-1.jpg"></a>
+                                <img src="images/img1.jpg" alt="">
+                            </div>
+                            <p>
+                                <span class="name">Дарья</span>
+                                <span class="data">08 июля 2019 </span>
+                                Специалисты Института помогли мне
+                                решить те проблемы, которые долгое
+                                время беспокоили, но приступить к
+                                лечению я не решалась.
+                                В особенности хотелось бы поблагодарить
+                                прекрасного специалиста - доктора Надежду
+                                Викторовну, которая смогла подобрать
+                                правильный курс лечения.
+                            </p>
+                        </div>
 
-                            </div>
-                        </div>
-                        <div class="item">
+                        <div class="col-md-4">
                             <div class="image">
-                                <a data-fancybox="gallery" href="images/otz-2.jpg"><img src="images/otz-2.jpg"></a>
+                                <img src="images/img2.jpg" alt="">
                             </div>
+                            <p>
+                                <span class="name">Анжелика</span>
+                                <span class="data">05 декабря 2018 </span>
+                                Я рада что попала к хорошему врачу Врачу Алексею Сергеевичу, который наконец то помог
+                                мне избавиться и красных звёздочек на лице и ужасных сосудов на носу. Я любуюсь своей
+                                кожей, без этих красных безобразий.
+                            </p>
                         </div>
-                        <div class="item">
+
+                        <div class="col-md-4">
                             <div class="image">
-                                <a data-fancybox="gallery" href="images/otz-3.jpg"><img src="images/otz-3.jpg"></a>
+                                <img src="images/img3.jpg" alt="">
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <a data-fancybox="gallery" href="images/otz-2.jpg"><img src="images/otz-2.jpg"></a>
-                            </div>
+                            <p>
+                                <span class="name">Ксения</span>
+                                <span class="data">08 марта 2019 </span>
+                                Даже когда совсем нет времени на себя, нужно стараться его найти! Забить на что-то менее
+                                важное, а для себя найти! Хоть раз в месяц (это прям минимум, конечно ) выбираться в
+                                какое-нибудь приятное место и получать удавольствие от процедур, в результате которых
+                                становиться еще краше и прелестней)) ! Девочкам это просто необходимо! Раз в месяц я
+                                обязательно выбираюсь в ok klinik. Результатами процедур очень довольна! Всегда вежливые
+                                администраторы и грамотные специалисты! Спасибо! Увидимся!
+                            </p>
                         </div>
                     </div>
+
+                    <!--<div class="owl-carousel block-carousel owl-theme">-->
+                    <!--<div>-->
+                        <!--<div class="item">-->
+                            <!--<div class="image">-->
+                                <!--<img src="images/img1.jpg">-->
+                            <!--</div>-->
+                            <!--<p>-->
+
+                            <!--</p>-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                            <!--<div class="image">-->
+                                <!--<a data-fancybox="gallery" href="images/otz-2.jpg"><img src="images/otz-2.jpg"></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                            <!--<div class="image">-->
+                                <!--<a data-fancybox="gallery" href="images/otz-3.jpg"><img src="images/otz-3.jpg"></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                            <!--<div class="image">-->
+                                <!--<a data-fancybox="gallery" href="images/otz-2.jpg"><img src="images/otz-2.jpg"></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
                 </div>
             </section>
 
@@ -455,8 +485,8 @@
                         </div>
                     </marquee>
 
-                    <h2 class="title text-uppercase text-center follow">ПОДПИСЫВАЙТЕСЬ НА <a class="clik"
-                            href="#">#V_KLINIK </a></h2>
+                    <!--<h2 class="title text-uppercase text-center follow">ПОДПИСЫВАЙТЕСЬ НА <a class="clik"-->
+                            <!--href="#">#V_KLINIK </a></h2>-->
                     <!--<p class="text-center unable">Unable to show Instagram photos</p>-->
                 </div>
             </section>
@@ -465,7 +495,7 @@
 
         <!--_________________________FOOTER_________________________-->
 
-        <footer class="footer">
+        <footer class="footer" id="cont-link">
             <div class="container">
                 <div class="footer-inner">
                     <div class="phones">
@@ -475,12 +505,12 @@
                         </div>
                             +38 067 102 01 75
                         </a>
-                        <a href="tel:+38 099 102 01 75" class="mobile">
-                        <div class="image">
-                            <img src="images/mts.png" alt="mts">
-                        </div>
-                            +38 099 102 01 75
-                        </a>
+                        <!--<a href="tel:+38 099 102 01 75" class="mobile">-->
+                        <!--<div class="image">-->
+                            <!--<img src="images/mts.png" alt="mts">-->
+                        <!--</div>-->
+                            <!--+38 099 102 01 75-->
+                        <!--</a>-->
                     </div>
                     <div class="social-icons">
                         <a href="mailto:onclinick@gmail.com" class="email"> <i class="far fa-envelope"></i> &zwnj; onclinick@gmail.com</a>
@@ -501,6 +531,7 @@
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"-->
         <!--integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"-->
         <!--crossorigin="anonymous"></script>-->
+    <script src="js/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Magnific Popup core JS file -->
@@ -509,6 +540,8 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <!-- owl carousel JS -->
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
     <script src="js/main.js"></script>
 
 
